@@ -1,0 +1,11 @@
+---
+applications:
+  - name: cook2
+    routes:
+      - route: cookie2.apps.pas.kirklab.io
+    instances: 1
+    memory: 1G
+    services:
+      - composite-config-server
+    env:
+      SPRING_PROFILES_ACTIVE: development
